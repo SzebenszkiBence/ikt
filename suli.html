@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Shooting Game</title>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+    <link rel="stylesheet" href="suli.css">
+</head>
+<body onload="brython()">
+    <header>
+        <h1>Plane Shooting Game</h1>
+    </header>
+
+    <div class="bevezeto">
+        <section class="intro">
+            <h2>Üdvözlünk a Plane Shooting Game-ben!</h2>
+            <p>Ebben a játékban egy vadászrepülőt irányítasz, és az a célod, hogy lelődd az aszteroidákat. Légy óvatos, mert sok van belőlük! Használd a nyilakat a mozgáshoz és a szóközt a lövésekhez.</p>
+        </section>
+
+        <div id="jatek">
+            <p>jatek</p>
+        </div>
+    </div>
+
+    <script type="text/python">
+        # Itt illeszd be a Python játék kódodat
+        from browser import document
+
+        # Példa kód: Kattintáskor szöveget vált
+        def start_game(event):
+            document["game-container"].html = "<h2>Játék elindult!</h2>"
+
+        document["game-container"].bind("click", start_game)
+    </script>
+</body>
+</html>
