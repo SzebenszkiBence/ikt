@@ -1,0 +1,7 @@
+[project]
+name = "My Space Shooter Game"
+version = "0.2.0"
+description = "A simple space shooter game made with Pygame."
+
+[build]
+entry = "main.py"  # A fő Python fájl neve
